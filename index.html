@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Maira</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#home" aria-label="Ir al inicio">Maira</a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="container hero__grid">
+      <!-- izquierda: texto -->
+      <div class="hero__copy">
+        <p class="eyebrow">QA • Frontend • UI/UX</p>
+        <h1 class="hero__title">Hola, soy Maira Andrada.</h1>
+
+        <p class="hero__lead">
+          Desarrolladora Front-End con formación en Desarrollo de Software y un fuerte interés en
+          crear interfaces modernas, funcionales y centradas en la experiencia del usuario.
+        </p>
+
+        <p class="hero__lead muted">
+          Me caracterizo por ser una persona proactiva, curiosa y constante, con ganas de seguir aprendiendo y
+          crecer profesionalmente dentro del mundo IT.
+        </p>
+      </div>
+
+      <!-- derecha: foto (como el ejemplo) -->
+      <aside class="hero__media" aria-label="Foto de perfil">
+        <div class="photoCard">
+          <img
+            class="photo"
+            src="img/perfil.jpg"
+            alt="Foto de Maira"
+            loading="lazy"
+          />
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Sobre mí</h2>
+        <p class="muted">
+          Me encanta crear experiencias atractivas y funcionales, con enfoque en detalle y calidad.
+        </p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Qué hago</h3>
+          <p class="muted">Maquetación, estilos consistentes, componentes y mejoras de interfaz.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cómo trabajo</h3>
+          <p class="muted">Orden, claridad, pruebas y entregables listos para producción.</p>
+        </div>
+
+        <div class="card">
+          <h3>Objetivo</h3>
+          <p class="muted">Sumar proyectos reales y publicar deploys para mostrar resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Proyectos</h2>
+        <p class="muted">Estos son los dos que vamos a sumar con demo + repo.</p>
+      </div>
+
+      <div class="projects" role="list">
+        <article class="card project" role="listitem">
+          <div class="project__top">
+            <span class="tag">HTML • CSS • JS</span>
+            <span class="tag tag--soft">Landing</span>
+          </div>
+
+          <h3>Landing Page</h3>
+          <p class="muted">
+            Landing moderna con secciones, cards y estilos. Responsive y animaciones suaves.
+          </p>
+
+          <div class="project__links">
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project" role="listitem">
+          <div class="project__top">
+            <span class="tag">React • Vite</span>
+            <span class="tag tag--soft">To-Do</span>
+          </div>
+
+          <h3>To-Do App</h3>
+          <p class="muted">
+            Login, CRUD de tareas, edición con Enter/Esc, filtros y estilo premium.
+          </p>
+
+          <div class="project__links">
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p class="muted">Un resumen claro y scaneable.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Vite</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>QA</h3>
+          <div class="chips">
+            <span class="chip">Casos de prueba</span>
+            <span class="chip">Jira/Xray</span>
+            <span class="chip">Validación UI</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Postman</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contacto</h2>
+        <p class="muted">Si querés trabajar conmigo o tenés una consulta, escribime.</p>
+      </div>
+
+      <div class="card contact">
+        <div class="contact__grid">
+          <div>
+            <p class="muted">Email</p>
+            <p><a href="mailto:mairaandrada@gmail.com">mairaandrada@gmail.com</a></p>
+
+            <p class="muted" style="margin-top:14px;">Ubicación</p>
+            <p>Mina Clavero, Córdoba, Argentina</p>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <label>
+              <span>Nombre</span>
+              <input type="text" placeholder="Tu nombre" autocomplete="name" />
+            </label>
+
+            <label>
+              <span>Mensaje</span>
+              <textarea rows="4" placeholder="Contame qué necesitás..." autocomplete="off"></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer muted">© 2026 · Maira · Portfolio</footer>
+    </div>
+  </section>
+</body>
+</html>
